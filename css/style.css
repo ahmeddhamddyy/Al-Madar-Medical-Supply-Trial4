@@ -1,0 +1,708 @@
+/********** Template CSS **********/
+:root {
+  --primary: #06a3da;
+  --secondary: #f57e57;
+  --light: #eef9ff;
+  --dark: #091e3e;
+}
+
+h1,
+h2,
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+h3,
+h4,
+.font-weight-semi-bold {
+  font-weight: 600 !important;
+}
+
+h5,
+h6,
+.font-weight-medium {
+  font-weight: 500 !important;
+}
+
+.btn {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.btn-primary,
+.btn-secondary {
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-square {
+  width: 36px;
+  height: 36px;
+}
+
+.btn-sm-square {
+  width: 28px;
+  height: 28px;
+}
+
+.btn-lg-square {
+  width: 46px;
+  height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+#spinner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+  z-index: 99999;
+}
+
+#spinner.show {
+  transition: opacity 0.5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 45px;
+  bottom: 45px;
+  z-index: 99;
+}
+
+.top-shape::before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 100%;
+  top: 0;
+  left: -17px;
+  background: var(--primary);
+  transform: skew(40deg);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-family: "Jost", sans-serif;
+  padding: 35px 15px;
+  font-size: 18px;
+  color: var(--dark);
+  outline: none;
+  transition: 0.5s;
+}
+
+.sticky-top.navbar-light .navbar-nav .nav-link {
+  padding: 20px 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+  .navbar-light .navbar-nav .nav-link,
+  .sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 10px 0;
+  }
+}
+
+.carousel-caption {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(9, 30, 62, 0.85);
+  z-index: 1;
+}
+
+@media (max-width: 576px) {
+  .carousel-caption h5 {
+    font-size: 14px;
+    font-weight: 500 !important;
+  }
+
+  .carousel-caption h1 {
+    font-size: 30px;
+    font-weight: 600 !important;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (min-width: 991.98px) {
+  .banner {
+    position: relative;
+    margin-top: -90px;
+    z-index: 1;
+  }
+}
+
+.section-title h5::before {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 3px;
+  right: -55px;
+  bottom: 11px;
+  background: var(--primary);
+}
+
+.section-title h5::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 3px;
+  right: -75px;
+  bottom: 11px;
+  background: var(--secondary);
+}
+
+.twentytwenty-wrapper {
+  height: 100%;
+}
+
+.hero-header {
+  background: linear-gradient(rgba(9, 30, 62, 0.85), rgba(9, 30, 62, 0.85)),
+    url(../img/heroheader.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.bg-appointment {
+  background: linear-gradient(rgba(9, 30, 62, 0.85), rgba(9, 30, 62, 0.85)),
+    url(../img/appointment\ img.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.appointment-form {
+  background: rgba(6, 163, 218, 0.7);
+}
+
+.service-item img,
+.service-item .bg-light,
+.service-item .bg-light h5,
+.team-item .team-text {
+  transition: 0.5s;
+}
+
+.service-item:hover img {
+  transform: scale(1.15);
+}
+
+.team-item .team-text::after,
+.service-item .bg-light::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  border-radius: 100px / 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.team-item:hover .team-text::after,
+.service-item:hover .bg-light::after {
+  opacity: 1;
+}
+
+.bg-offer {
+  background: url(../img/carousel-1.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.offer-text {
+  background: rgba(6, 163, 218, 0.85);
+}
+
+.price-carousel .owl-nav {
+  position: absolute;
+  width: calc(100% + 45px);
+  height: 45px;
+  top: calc(50% - 22.5px);
+  left: -22.5px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.price-carousel:hover .owl-nav {
+  opacity: 1;
+}
+
+.price-carousel .owl-nav .owl-prev,
+.price-carousel .owl-nav .owl-next {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: var(--primary);
+  border-radius: 2px;
+  font-size: 22px;
+  transition: 0.5s;
+}
+
+.price-carousel .owl-nav .owl-prev:hover,
+.price-carousel .owl-nav .owl-next:hover {
+  background: var(--secondary);
+}
+
+.bg-testimonial {
+  background: url(../img/testmonial\ 3.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.testimonial-carousel {
+  background: rgba(6, 163, 218, 0.85);
+}
+
+.testimonial-carousel .owl-nav {
+  position: absolute;
+  width: calc(100% + 46px);
+  height: 46px;
+  top: calc(50% - 23px);
+  left: -23px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: var(--primary);
+  border-radius: 2px;
+  font-size: 22px;
+  transition: 0.5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+  background: var(--secondary);
+}
+
+.testimonial-carousel .owl-item img {
+  width: 120px;
+  height: 120px;
+}
+
+.vision {
+  color: #eef9ff;
+  margin-top: 30px;
+}
+
+.mission {
+  color: #eef9ff;
+  margin-top: 30px;
+}
+
+.box1 {
+  height: 300px;
+}
+
+.miss2 {
+  padding-left: 120px;
+}
+
+.par1 {
+  color: white;
+}
+
+.con {
+  padding-left: 200px;
+}
+
+.tex1 {
+  font-size: 30px;
+  color: black;
+}
+
+.bod {
+  height: 100px;
+}
+
+.services {
+  display: inline;
+}
+
+.car1 {
+  height: 30px;
+}
+
+.slogan {
+  color: white;
+}
+
+.section {
+  width: 90%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  grid-gap: 25px;
+  transition: 0.5s;
+}
+
+.card {
+  background-color: #5f6062;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.2s;
+}
+
+.img-section {
+  min-height: 340px;
+}
+
+.card .icu {
+  background-image: url("../img/icu%20ps.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card .resmed {
+  background-image: url("../img/resmedps.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card .teewong {
+  background-image: url("../img/Taewongps.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card .sempermed {
+  background-image: url("../img/sempermed%20ps.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.card .endoclot {
+  background-image: url("../img/endoclot%20ps.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.card .ovesco {
+  background-image: url("../img/ovescops.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+.card .smd {
+  background-image: url("../img/smdps.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.card .christie {
+  background-image: url("../img/christiemed.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.card .medri {
+  background-image: url("../img/medrips.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+.card .simeox {
+  background-image: url("../img/simox%20consultps.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+.card .avanos {
+  background-image: url("../img/Avanos_Logo%20ps.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.card .nidek {
+  background-image: url("../img/Nidekps.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.card .sempermedgloves {
+  background-image: url("../img/Products/supermedGloves.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.content {
+  text-align: center;
+  margin: auto;
+  padding: 20px 15px;
+}
+
+.content p {
+  font-size: 20px;
+  color: white;
+  margin: 15px 0px;
+}
+
+.content a {
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  color: #eef9ff;
+  letter-spacing: 2px;
+  display: inline-block;
+  background-color: #06a3da;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+
+.content a:hover {
+  background-color: #f57e57;
+  transition: 1s ease;
+}
+
+.card:hover {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
+}
+
+.section4 {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.conatiner7 {
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.content-section7 {
+  float: left;
+  width: 55%;
+}
+
+.img-sect {
+  float: right;
+  width: 40%;
+}
+.img-sect img {
+  width: 100%;
+  height: auto;
+}
+
+.content-section7 title {
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+.content-section7 content3 p {
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.content-section7 social {
+  margin: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .conatiner7 {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+  }
+  .content-section7 {
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .img-sect {
+    float: none;
+    width: 100%;
+  }
+  .img-sect img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 40px;
+  }
+  .content-section7 title {
+    text-align: center;
+    font-size: 19px;
+  }
+  .content-section7 social {
+    text-align: center;
+  }
+  .content-section7 soctitle {
+    text-align: center;
+  }
+  .box2 {
+    height: 60%;
+  }
+  .box1 {
+    width: 516px;
+    height: 300px;
+  }
+}
+
+.slogan6 {
+  color: #f57e57;
+}
+
+.card .cool {
+  background-image: url("../img/Products/COOLief.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.dealt {
+  background-image: url("../img/Products/Deltec%20Port-A-Cath%20Venous%20Access%20System.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mic {
+  background-image: url("../img/Products/MIC-KEY%20FEEDING%20TUBE%20KITS.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.nidekkk {
+  background-image: url("../img/Products/Nidek-Nuvo-Lite-Oxygen-Concentrator.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.otsc {
+  background-image: url("../img/Products/OTSC%C2%AE%20System%20Set.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.portex {
+  background-image: url("../img/Products/Portex%20Uniperc%20Percutaneous%20Dilation%20Tracheostomy%20Kit.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.res-air {
+  background-image: url("../img/Products/ResMed%20AirSense%2010%20Autoset.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.res-ast {
+  background-image: url("../img/Products/Resmed%20Astral%20150%20Ventilator.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sime {
+  background-image: url("../img/Products/simeox-accesoires-cable.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.smdd {
+  background-image: url("../img/Products/SMD%20IV%20Therapy%20&%20Vascular%20Access.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.taewomgi {
+  background-image: url("../img/Products/Taewoong%20Medical%20Gastrointestinal%20Stent.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.text-light {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Set default color */
+}
+
+.text-light:hover {
+  color: #06a3da; /* Change color on hover */
+}
+.carousel-item {
+  height: 800px;
+}
+
+.missionStatment h1,
+.visionStatment h1 {
+  color: white;
+  text-align: center;
+}
