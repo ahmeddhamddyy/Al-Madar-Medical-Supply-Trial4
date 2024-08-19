@@ -567,6 +567,42 @@ h6,
   margin: 40px;
 }
 
+@media (max-width: 767.98px){
+  .navbar {
+    width: 100%;
+    padding-left:0 ;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 767.98px){
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width: 767.98px){
+  .navbar-light .navbar-nav .nav-link {
+    padding: 15px 10px;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .navbar-toggler {
+    border-color: var(--primary);
+    background-color: var(--primary);
+    color: white;
+  }
+
+  .navbar-toggler:focus {
+    outline: none;
+  }
+}
+
+
 @media screen and (max-width: 768px) {
   .conatiner7 {
     width: 80%;
