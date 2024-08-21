@@ -98,13 +98,13 @@
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        items: 1,
-        dots: false,
-        loop: true,
-        nav: false, // Disable navigation arrows
-        navText: [] // Remove navigation arrow text
+        autoplay: false,   // Disable automatic sliding
+        smartSpeed: 1000,  // Speed of the sliding animation (not needed if autoplay is false)
+        items: 1,          // Number of items to display at a time
+        dots: true,        // Show pagination dots
+        loop: false,       // Disable looping through items
+        nav: false,        // Disable navigation arrows
+        navText: []        // Remove navigation arrow text
     });
-    
+
 })(jQuery);
