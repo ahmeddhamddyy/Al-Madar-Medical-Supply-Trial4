@@ -11,10 +11,8 @@
     };
     spinner();
     
-    
     // Initiate the wowjs
     new WOW().init();
-
 
     // Sticky Navbar
     $(window).scroll(function () {
@@ -52,7 +50,6 @@
         }
     });
     
-    
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -66,7 +63,6 @@
         return false;
     });
 
-
     // Date and time picker
     $('.date').datetimepicker({
         format: 'L'
@@ -75,10 +71,8 @@
         format: 'LT'
     });
 
-
     // Image comparison
     $(".twentytwenty-container").twentytwenty({});
-
 
     // Price carousel
     $(".price-carousel").owlCarousel({
@@ -87,21 +81,20 @@
         margin: 45,
         dots: false,
         loop: true,
-        nav : true,
-        navText : [
+        nav: true,
+        navText: [
             '<i class="bi bi-arrow-left"></i>',
             '<i class="bi bi-arrow-right"></i>'
         ],
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            768:{
-                items:2
+            768: {
+                items: 2
             }
         }
     });
-
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
@@ -110,12 +103,8 @@
         items: 1,
         dots: false,
         loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
-        ],
+        nav: false, // Disable navigation arrows
+        navText: [] // Remove navigation arrow text
     });
     
 })(jQuery);
-
