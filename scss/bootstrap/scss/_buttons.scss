@@ -2,42 +2,47 @@
 // Base styles
 //
 
-.btn {
+.button {
   display: inline-block;
-  font-family: $btn-font-family;
-  font-weight: $btn-font-weight;
-  line-height: $btn-line-height;
+  font-family: $button-font-family;
+  font-weight: $button-font-weight;
+  line-height: $button-line-height;
   color: $body-color;
   text-align: center;
   text-decoration: if($link-decoration == none, null, none);
-  white-space: $btn-white-space;
+  white-space: $button-white-space;
   vertical-align: middle;
   cursor: if($enable-button-pointers, pointer, null);
   user-select: none;
   background-color: transparent;
-  border: $btn-border-width solid transparent;
-  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
-  @include transition($btn-transition);
+  border: $button-border-width solid transparent;
+  @include button-size(
+    $button-padding-y,
+    $button-padding-x,
+    $button-font-size,
+    $button-border-radius
+  );
+  @include transition($button-transition);
 
   &:hover {
     color: $body-color;
     text-decoration: if($link-hover-decoration == underline, none, null);
   }
 
-  .btn-check:focus + &,
+  .button-check:focus + &,
   &:focus {
     outline: 0;
-    box-shadow: $btn-focus-box-shadow;
+    box-shadow: $button-focus-box-shadow;
   }
 
-  .btn-check:checked + &,
-  .btn-check:active + &,
+  .button-check:checked + &,
+  .button-check:active + &,
   &:active,
   &.active {
-    @include box-shadow($btn-active-box-shadow);
+    @include box-shadow($button-active-box-shadow);
 
     &:focus {
-      @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+      @include box-shadow($button-focus-box-shadow, $button-active-box-shadow);
     }
   }
 
@@ -45,43 +50,41 @@
   &.disabled,
   fieldset:disabled & {
     pointer-events: none;
-    opacity: $btn-disabled-opacity;
+    opacity: $button-disabled-opacity;
     @include box-shadow(none);
   }
 }
-
 
 //
 // Alternate buttons
 //
 
-// scss-docs-start btn-variant-loops
+// scss-docs-start button-variant-loops
 @each $color, $value in $theme-colors {
-  .btn-#{$color} {
+  .button-#{$color} {
     @include button-variant($value, $value);
   }
 }
 
 @each $color, $value in $theme-colors {
-  .btn-outline-#{$color} {
+  .button-outline-#{$color} {
     @include button-outline-variant($value);
   }
 }
-// scss-docs-end btn-variant-loops
-
+// scss-docs-end button-variant-loops
 
 //
 // Link buttons
 //
 
 // Make a button look and behave like a link
-.btn-link {
+.button-link {
   font-weight: $font-weight-normal;
-  color: $btn-link-color;
+  color: $button-link-color;
   text-decoration: $link-decoration;
 
   &:hover {
-    color: $btn-link-hover-color;
+    color: $button-link-hover-color;
     text-decoration: $link-hover-decoration;
   }
 
@@ -91,21 +94,30 @@
 
   &:disabled,
   &.disabled {
-    color: $btn-link-disabled-color;
+    color: $button-link-disabled-color;
   }
 
   // No need for an active state here
 }
 
-
 //
 // Button Sizes
 //
 
-.btn-lg {
-  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-border-radius-lg);
+.button-lg {
+  @include button-size(
+    $button-padding-y-lg,
+    $button-padding-x-lg,
+    $button-font-size-lg,
+    $button-border-radius-lg
+  );
 }
 
-.btn-sm {
-  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-border-radius-sm);
+.button-sm {
+  @include button-size(
+    $button-padding-y-sm,
+    $button-padding-x-sm,
+    $button-font-size-sm,
+    $button-border-radius-sm
+  );
 }

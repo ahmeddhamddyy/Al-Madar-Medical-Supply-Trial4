@@ -26,7 +26,7 @@
   // Ensure buttons are always above inputs for more visually pleasing borders.
   // This isn't needed for `.input-group-text` since it shares the same border-color
   // as our inputs.
-  .btn {
+  .button {
     position: relative;
     z-index: 2;
 
@@ -35,7 +35,6 @@
     }
   }
 }
-
 
 // Textual addons
 //
@@ -57,7 +56,6 @@
   @include border-radius($input-border-radius);
 }
 
-
 // Sizing
 //
 // Remix the default form control sizing classes into new ones for easier
@@ -66,7 +64,7 @@
 .input-group-lg > .form-control,
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
-.input-group-lg > .btn {
+.input-group-lg > .button {
   padding: $input-padding-y-lg $input-padding-x-lg;
   @include font-size($input-font-size-lg);
   @include border-radius($input-border-radius-lg);
@@ -75,7 +73,7 @@
 .input-group-sm > .form-control,
 .input-group-sm > .form-select,
 .input-group-sm > .input-group-text,
-.input-group-sm > .btn {
+.input-group-sm > .button {
   padding: $input-padding-y-sm $input-padding-x-sm;
   @include font-size($input-font-size-sm);
   @include border-radius($input-border-radius-sm);
@@ -85,7 +83,6 @@
 .input-group-sm > .form-select {
   padding-right: $form-select-padding-x + $form-select-indicator-padding;
 }
-
 
 // Rounded corners
 //
@@ -111,7 +108,13 @@
 
   $validation-messages: "";
   @each $state in map-keys($form-validation-states) {
-    $validation-messages: $validation-messages + ":not(." + unquote($state) + "-tooltip)" + ":not(." + unquote($state) + "-feedback)";
+    $validation-messages: $validation-messages +
+      ":not(." +
+      unquote($state) +
+      "-tooltip)" +
+      ":not(." +
+      unquote($state) +
+      "-feedback)";
   }
 
   > :not(:first-child):not(.dropdown-menu)#{$validation-messages} {
