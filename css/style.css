@@ -246,7 +246,7 @@ h6,
 /* Background styling for appointment section */
 .bg-appointment {
   background: linear-gradient(rgba(9, 30, 62, 0.85), rgba(9, 30, 62, 0.85)),
-    url(../img/testmonial\ 3.jpg) center center no-repeat; /* Background image with gradient */
+    url(../img/SaudiMedicalStaffCarousel1.jpg) center center no-repeat; /* Background image with gradient */
   background-size: cover; /* Cover the entire container */
 }
 
@@ -561,3 +561,81 @@ h5 {
     height: 300px; /* Height of box 1 */
   }
 }
+
+.testimonial-Letter p {
+  color: white;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+
+.partners .btn {
+  background: var(--primary); /* Background color for the button */
+  border: none; /* Remove default border */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Button padding */
+  font-size: 16px; /* Font size */
+  font-weight: 600;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.partners:hover .btn {
+  background: var(--secondary); /* Background color on hover */
+}
+
+
+/* Extra Small Devices (Phones, up to 576px) */
+@media (max-width: 576px) {
+  .testimonial-Letter p {
+      font-size: 14px; /* Smaller font size for small screens */
+  }
+
+  .partners .btn {
+      padding: 8px 16px; /* Adjust padding */
+      font-size: 14px; /* Smaller font size */
+  }
+}
+
+/* Small Devices (Tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .testimonial-Letter p {
+      font-size: 16px; /* Adjust font size */
+  }
+
+  .partners .btn {
+      padding: 10px 18px; /* Adjust padding */
+      font-size: 15px; /* Adjust font size */
+  }
+}
+
+/* Medium Devices (Tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .testimonial-Letter p {
+      font-size: 18px; /* Adjust font size */
+  }
+
+  .partners .btn {
+      padding: 12px 20px; /* Adjust padding */
+      font-size: 16px; /* Adjust font size */
+  }
+}
+
+/* Large Devices (Desktops, 992px and up) */
+@media (min-width: 992px) {
+  .testimonial-Letter p {
+      font-size: 20px; /* Larger font size for larger screens */
+  }
+
+  .partners .btn {
+      padding: 12px 24px; /* Adjust padding */
+      font-size: 18px; /* Larger font size */
+  }
+}
+
