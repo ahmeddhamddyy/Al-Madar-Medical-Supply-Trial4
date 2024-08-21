@@ -584,6 +584,7 @@ h5 {
   font-weight: 600;
   border-radius: 5px; /* Rounded corners */
   transition: background-color 0.3s ease; /* Smooth transition */
+  
 }
 
 .partners:hover .btn {
