@@ -591,6 +591,13 @@ h5 {
   background: var(--secondary); /* Background color on hover */
 }
 
+.pharmix{
+  object-fit: contain;
+}
+
+.prodcutsImage{
+  object-fit: contain;
+}
 
 /* Extra Small Devices (Phones, up to 576px) */
 @media (max-width: 576px) {
