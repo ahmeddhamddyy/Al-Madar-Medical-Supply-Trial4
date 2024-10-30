@@ -30,6 +30,10 @@ through guaranteed logistics & post-sales services."
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -88,6 +92,7 @@ through guaranteed logistics & post-sales services."
     <!-- Topbar End -->
 
     <!-- Navbar Start -->
+    <!-- Navbar Start -->
     <nav
       class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0"
     >
@@ -96,36 +101,29 @@ through guaranteed logistics & post-sales services."
           <img src="img/Almadar Logo-01.png" style="height: 90px" />
         </h1>
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto py-0">
-          <a href="index.html" class="nav-item nav-link active" target="_self"
-            >Home</a
-          >
-          <a href="Our%20Partners.html" class="nav-item nav-link" target="_self"
-            >Our Partners</a
-          >
-          <a href="Our%20Products.html" class="nav-item nav-link" target="_self"
-            >Our Products</a
-          >
-          <a href="Our%20Story.html" class="nav-item nav-link" target="_self"
-            >Our Story</a
-          >
-          <a href="Our Team.html" class="nav-item nav-link" target="_self"
-            >Our Team</a
-          >
-        </div>
-        
+          <div class="navbar-nav ms-auto py-0">
+              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <a href="about.html" class="nav-item nav-link">Our Partners</a>
+              <a href="service.html" class="nav-item nav-link">Our Products</a>
+              <a href="contact.html" class="nav-item nav-link">Our Story</a>
+              <div class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Team</a>
+                  <div class="dropdown-menu m-0">
+                      <a href="CEO.html" class="dropdown-item">CEOs</a>
+                      <a href="Our Doctors.html" class="dropdown-item">Our Doctors</a>
+                      <a href="Accounting Team.html" class="dropdown-item">Accounting Team</a>
+                      <a href="Marketing Team.html" class="dropdown-item">Marketing Team</a>
+                  </div>
+              </div>
+          </div>
+          <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3 ">External Platform</a>
       </div>
-    </nav>
-    <!-- Navbar End -->
+  </nav>
+  <!-- Navbar End -->
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0">
@@ -187,24 +185,24 @@ through guaranteed logistics & post-sales services."
             </div>
           </div>
         </div>
-        <button
+        <btn
           class="carousel-control-prev"
-          type="button"
+          type="btn"
           data-bs-target="#header-carousel"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
-        </button>
-        <button
+        </btn>
+        <btn
           class="carousel-control-next"
-          type="button"
+          type="btn"
           data-bs-target="#header-carousel"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
-        </button>
+        </btn>
       </div>
     </div>
 
@@ -341,9 +339,9 @@ through guaranteed logistics & post-sales services."
                   <div class="owl-carousel testimonial-carousel rounded p-5 wow zoomIn" data-wow-delay="0.6s">
                       <div class="testimonial-Letter">
                           <p>"Al-Madar provides top-quality medical supplies with exceptional reliability. Their prompt service and high standards ensure we always have what we need to care for our patients. Highly recommended!"</p>
-                          <div class="Testimonial-button">
+                          <div class="Testimonial-btn">
                               <a href="Our Partners.html" class="partners">
-                                  <button class="btn">Our Partners</button>
+                                  <btn class="btn">Our Partners</btn>
                               </a>
                           </div>
                       </div>
@@ -378,18 +376,18 @@ through guaranteed logistics & post-sales services."
               <a class="text-light mb-2" href="index.html"
                 ><i class="bi bi-arrow-right text-primary me-2"></i>Home</a
               >
-              <a class="text-light mb-2" href="Our%20Partners.html"
+              <a class="text-light mb-2" href="Our Partners.html"
                 ><i class="bi bi-arrow-right text-primary me-2"></i>Our
                 Partners</a
               >
-              <a class="text-light mb-2" href="Our%20Products.html"
+              <a class="text-light mb-2" href="Our Products.html"
                 ><i class="bi bi-arrow-right text-primary me-2"></i>Our
                 Products</a
               >
-              <a class="text-light mb-2" href="Our%20Story.html"
+              <a class="text-light mb-2" href="Our Story.html"
                 ><i class="bi bi-arrow-right text-primary me-2"></i>Our Story</a
               >
-              <a class="text-light" href="Our%20Team.html"
+              <a class="text-light" href="CEO.html"
                 ><i class="bi bi-arrow-right text-primary me-2"></i>Our Team</a
               >
             </div>
@@ -418,13 +416,13 @@ through guaranteed logistics & post-sales services."
             <h3 class="text-white mb-4">Follow Us</h3>
             <div class="d-flex">
               <a
-                class="button button-lg button-primary button-lg-square rounded me-2"
+                class="btn btn-lg btn-primary btn-lg-square rounded me-2"
                 href="https://twitter.com/almadarmed?lang=en"
                 target="_blank"
                 ><i class="fab fa-twitter fw-normal"></i
               ></a>
               <a
-                class="button button-lg button-primary button-lg-square rounded me-2"
+                class="btn btn-lg btn-primary btn-lg-square rounded me-2"
                 href="https://www.linkedin.com/company/al-madar-medical-company/"
                 ><i class="fab fa-linkedin-in fw-normal"></i
               ></a>
@@ -437,7 +435,7 @@ through guaranteed logistics & post-sales services."
     <!-- Footer End -->
 
     <!-- Back to Top -->
-    <a href="#" class="button button-lg button-primary button-lg-square rounded back-to-top"
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"
       ><i class="bi bi-arrow-up"></i
     ></a>
 
@@ -460,7 +458,7 @@ through guaranteed logistics & post-sales services."
 </html>
 
     <!-- Back to Top -->
-    <a href="#" class="button button-lg button-primary button-lg-square rounded back-to-top"
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"
       ><i class="bi bi-arrow-up"></i
     ></a>
 

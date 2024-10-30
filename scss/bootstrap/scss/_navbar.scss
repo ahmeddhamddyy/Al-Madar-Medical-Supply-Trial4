@@ -8,7 +8,6 @@
 // Navbar position
 // Navbar themes
 
-
 // Navbar
 //
 // Provide a static navbar from which we expand to create full-width, fixed, and
@@ -48,7 +47,6 @@
   }
 }
 
-
 // Navbar brand
 //
 // Used for brand, project, or site names.
@@ -66,7 +64,6 @@
     text-decoration: if($link-hover-decoration == underline, none, null);
   }
 }
-
 
 // Navbar nav
 //
@@ -89,7 +86,6 @@
   }
 }
 
-
 // Navbar text
 //
 //
@@ -98,7 +94,6 @@
   padding-top: $nav-link-padding-y;
   padding-bottom: $nav-link-padding-y;
 }
-
 
 // Responsive navbar
 //
@@ -116,13 +111,13 @@
   align-items: center;
 }
 
-// Button for toggling the navbar when in its collapsed state
+// btn for toggling the navbar when in its collapsed state
 .navbar-toggler {
   padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
   @include font-size($navbar-toggler-font-size);
   line-height: 1;
-  background-color: transparent; // remove default button style
-  border: $border-width solid transparent; // remove default button style
+  background-color: transparent; // remove default btn style
+  border: $border-width solid transparent; // remove default btn style
   @include border-radius($navbar-toggler-border-radius);
   @include transition($navbar-toggler-transition);
 
@@ -199,7 +194,6 @@
 }
 // scss-docs-end navbar-expand-loop
 
-
 // Navbar themes
 //
 // Styles for switching between navbars with light or dark background.
@@ -249,7 +243,7 @@
 
     a,
     a:hover,
-    a:focus  {
+    a:focus {
       color: $navbar-light-active-color;
     }
   }

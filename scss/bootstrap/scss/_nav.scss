@@ -76,7 +76,6 @@
   }
 }
 
-
 //
 // Pills
 //
@@ -94,7 +93,6 @@
     @include gradient-bg($nav-pills-link-active-bg);
   }
 }
-
 
 //
 // Justified variants
@@ -120,10 +118,9 @@
 .nav-fill,
 .nav-justified {
   .nav-item .nav-link {
-    width: 100%; // Make sure button will grow
+    width: 100%; // Make sure btn will grow
   }
 }
-
 
 // Tabbable tabs
 //

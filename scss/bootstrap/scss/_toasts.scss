@@ -41,7 +41,7 @@
     subtract($toast-border-radius, $toast-border-width)
   );
 
-  .button-close {
+  .btn-close {
     margin-right: $toast-padding-x / -2;
     margin-left: $toast-padding-x;
   }

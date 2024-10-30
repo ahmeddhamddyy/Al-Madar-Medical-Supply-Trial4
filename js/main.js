@@ -1,6 +1,6 @@
 (function ($) {
     "use strict";
-
+  
     // Spinner
     var spinner = function () {
         setTimeout(function () {
@@ -13,7 +13,7 @@
     
     // Initiate the wowjs
     new WOW().init();
-
+  
     // Sticky Navbar
     $(window).scroll(function () {
         if ($(this).scrollTop() > 40) {
@@ -50,6 +50,18 @@
         }
     });
     
+    // Burger menu toggle (Bootstrap 5)
+$('.navbar-toggler').on('click', function() {
+    var isExpanded = $(this).attr('aria-expanded') === 'true';
+    if (isExpanded) {
+        $(this).attr('aria-expanded', 'false');
+        $('#navbarCollapse').removeClass('show');
+    } else {
+        $(this).attr('aria-expanded', 'true');
+        $('#navbarCollapse').addClass('show');
+    }
+});
+  
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -62,7 +74,7 @@
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
-
+  
     // Date and time picker
     $('.date').datetimepicker({
         format: 'L'
@@ -70,10 +82,10 @@
     $('.time').datetimepicker({
         format: 'LT'
     });
-
+  
     // Image comparison
     $(".twentytwenty-container").twentytwenty({});
-
+  
     // Price carousel
     $(".price-carousel").owlCarousel({
         autoplay: true,
@@ -81,30 +93,34 @@
         margin: 45,
         dots: false,
         loop: true,
-        nav: true,
-        navText: [
+        nav : true,
+        navText : [
             '<i class="bi bi-arrow-left"></i>',
             '<i class="bi bi-arrow-right"></i>'
         ],
         responsive: {
-            0: {
-                items: 1
+            0:{
+                items:1
             },
-            768: {
-                items: 2
+            768:{
+                items:2
             }
         }
     });
-
+  
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
-        autoplay: false,   // Disable automatic sliding
-        smartSpeed: 1000,  // Speed of the sliding animation (not needed if autoplay is false)
-        items: 1,          // Number of items to display at a time
-        dots: true,        // Show pagination dots
-        loop: false,       // Disable looping through items
-        nav: false,        // Disable navigation arrows
-        navText: []        // Remove navigation arrow text
+        autoplay: true,
+        smartSpeed: 1000,
+        items: 1,
+        dots: false,
+        loop: true,
+        nav : true,
+        navText : [
+            '<i class="bi bi-arrow-left"></i>',
+            '<i class="bi bi-arrow-right"></i>'
+        ],
     });
-
-})(jQuery);
+  
+  })(jQuery);
+  

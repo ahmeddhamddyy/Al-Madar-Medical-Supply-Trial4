@@ -23,7 +23,7 @@
   @include transition($input-transition);
 
   &[type="file"] {
-    overflow: hidden; // prevent pseudo element button overlap
+    overflow: hidden; // prevent pseudo element btn overlap
 
     &:not(:disabled):not(:read-only) {
       cursor: pointer;
@@ -76,43 +76,43 @@
     opacity: 1;
   }
 
-  // File input buttons theming
-  &::file-selector-button {
+  // File input btns theming
+  &::file-selector-btn {
     padding: $input-padding-y $input-padding-x;
     margin: (-$input-padding-y) (-$input-padding-x);
     margin-inline-end: $input-padding-x;
-    color: $form-file-button-color;
-    @include gradient-bg($form-file-button-bg);
+    color: $form-file-btn-color;
+    @include gradient-bg($form-file-btn-bg);
     pointer-events: none;
     border-color: inherit;
     border-style: solid;
     border-width: 0;
     border-inline-end-width: $input-border-width;
     border-radius: 0; // stylelint-disable-line property-disallowed-list
-    @include transition($button-transition);
+    @include transition($btn-transition);
   }
 
-  &:hover:not(:disabled):not(:read-only)::file-selector-button {
-    background-color: $form-file-button-hover-bg;
+  &:hover:not(:disabled):not(:read-only)::file-selector-btn {
+    background-color: $form-file-btn-hover-bg;
   }
 
-  &::-webkit-file-upload-button {
+  &::-webkit-file-upload-btn {
     padding: $input-padding-y $input-padding-x;
     margin: (-$input-padding-y) (-$input-padding-x);
     margin-inline-end: $input-padding-x;
-    color: $form-file-button-color;
-    @include gradient-bg($form-file-button-bg);
+    color: $form-file-btn-color;
+    @include gradient-bg($form-file-btn-bg);
     pointer-events: none;
     border-color: inherit;
     border-style: solid;
     border-width: 0;
     border-inline-end-width: $input-border-width;
     border-radius: 0; // stylelint-disable-line property-disallowed-list
-    @include transition($button-transition);
+    @include transition($btn-transition);
   }
 
-  &:hover:not(:disabled):not(:read-only)::-webkit-file-upload-button {
-    background-color: $form-file-button-hover-bg;
+  &:hover:not(:disabled):not(:read-only)::-webkit-file-upload-btn {
+    background-color: $form-file-btn-hover-bg;
   }
 }
 
@@ -152,13 +152,13 @@
   @include font-size($input-font-size-sm);
   @include border-radius($input-border-radius-sm);
 
-  &::file-selector-button {
+  &::file-selector-btn {
     padding: $input-padding-y-sm $input-padding-x-sm;
     margin: (-$input-padding-y-sm) (-$input-padding-x-sm);
     margin-inline-end: $input-padding-x-sm;
   }
 
-  &::-webkit-file-upload-button {
+  &::-webkit-file-upload-btn {
     padding: $input-padding-y-sm $input-padding-x-sm;
     margin: (-$input-padding-y-sm) (-$input-padding-x-sm);
     margin-inline-end: $input-padding-x-sm;
@@ -171,13 +171,13 @@
   @include font-size($input-font-size-lg);
   @include border-radius($input-border-radius-lg);
 
-  &::file-selector-button {
+  &::file-selector-btn {
     padding: $input-padding-y-lg $input-padding-x-lg;
     margin: (-$input-padding-y-lg) (-$input-padding-x-lg);
     margin-inline-end: $input-padding-x-lg;
   }
 
-  &::-webkit-file-upload-button {
+  &::-webkit-file-upload-btn {
     padding: $input-padding-y-lg $input-padding-x-lg;
     margin: (-$input-padding-y-lg) (-$input-padding-x-lg);
     margin-inline-end: $input-padding-x-lg;

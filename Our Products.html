@@ -48,6 +48,8 @@
       rel="stylesheet"
     />
     <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -123,39 +125,31 @@
     >
       <a href="index.html" class="navbar-brand p-0" target="_self">
         <h1 class="m-0 text-primary">
-          <img src="img/Almadar%20Logo-01.png" style="height: 90px" />
+          <img src="img/Almadar Logo-01.png" style="height: 90px" />
         </h1>
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto py-0">
-          <a href="index.html" class="nav-item nav-link" target="_self">Home</a>
-          <a href="Our%20Partners.html" class="nav-item nav-link" target="_self"
-            >Our Partners</a
-          >
-          <a
-            href="Our%20Products.html"
-            class="nav-item nav-link active"
-            target="_self"
-            >Our Products</a
-          >
-          <a href="Our%20Story.html" class="nav-item nav-link" target="_self"
-            >Our Story</a
-          >
-          <a href="Our%20Team.html" class="nav-item nav-link" target="_self"
-            >Our Team</a
-          >
-        </div>
-        
+          <div class="navbar-nav ms-auto py-0">
+              <a href="index.html" class="nav-item nav-link">Home</a>
+              <a href="Our Partners.html" class="nav-item nav-link">Our Partners</a>
+              <a href="Our Products.html" class="nav-item nav-link active">Our Products</a>
+              <a href="Our Story.html" class="nav-item nav-link">Our Story</a>
+              <div class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Team</a>
+                  <div class="dropdown-menu m-0">
+                      <a href="CEO.html" class="dropdown-item">CEOs</a>
+                      <a href="Our Doctors.html" class="dropdown-item">Our Doctors</a>
+                      <a href="Accounting Team.html" class="dropdown-item">Accounting Team</a>
+                      <a href="Marketing Team.html" class="dropdown-item">Marketing Team</a>
+                  </div>
+              </div>
+          </div>
+          <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3 ">External Platform</a>
       </div>
-    </nav>
+  </nav>
     <!-- Navbar End -->
 
     <!-- Navbar End -->
@@ -199,7 +193,7 @@
               <a
                 href="https://avanospainmanagement.com/solutions/chronic-pain/cooled-radiofrequency-products/"
                 target="_blank"
-                ><button class="button button-primary">Read More</button></a
+                ><btn class="btn btn-primary">Read More</btn></a
               >
             </div>
           </div>
@@ -224,7 +218,7 @@
               <a
                 href="https://www.icumed.com/products/infusion-therapy/vascular-access/implantable-ports/implantable-access-systems"
                 target="_blank"
-                ><button class="button button-primary">Read More</button></a
+                ><btn class="btn btn-primary">Read More</btn></a
               >
             </div>
           </div>
@@ -249,7 +243,7 @@
               <a
                 href="https://avanosmedicaldevices.com/digestive-health/enteral-feeding/mic-key-feeding-tube-kits/"
                 target="_blank"
-                ><button class="button button-primary">Read More</button></a
+                ><btn class="btn btn-primary">Read More</btn></a
               >
             </div>
           </div>
@@ -271,7 +265,7 @@
             </div>
             <div class="d-flex justify-content-around mb-5">
               <a href="https://www.nidekmedical.com/products/" target="_blank"
-                ><button class="button button-primary">Read More</button></a
+                ><btn class="btn btn-primary">Read More</btn></a
               >
             </div>
           </div>
@@ -295,7 +289,7 @@
               <a
                 href="https://ovesco.com/ovesco/colorectal-anastomotic-leaks-fistulae/"
                 target="_blank"
-                ><button class="button button-primary">Read More</button></a
+                ><btn class="btn btn-primary">Read More</btn></a
               >
             </div>
           </div>
@@ -321,7 +315,7 @@
               <a
                 href="https://www.icumed.com/products/critical-care/tracheostomy/uniperc-tubes-and-kits"
                 target="_blank"
-                ><button class="button button-primary">Read More</button></a
+                ><btn class="btn btn-primary">Read More</btn></a
               >
             </div>
           </div>
@@ -344,7 +338,7 @@
               <a
                 href="https://www.resmed.com/en-us/sleep-apnea/cpap-parts-support/sleep-apnea-full-products-list/cpap-machines/airsense-10/"
                 target="_blank"
-                ><button class="button button-primary">Read More</button></a
+                ><btn class="btn btn-primary">Read More</btn></a
               >
             </div>
           </div>
@@ -357,7 +351,7 @@
               alt="ResMed Astral Medical Image"
             />
             <div class="card-body">
-              <h5 class="card-title">Christie</h5>
+              <h5 class="card-title">Astral 150</h5>
               <p class="card-text">
                 ResMed Astral quickly switch between mouthpiece or mask
                 ventilation without changing adapters.
@@ -368,7 +362,7 @@
               <a
                 href="https://www.resmed.com/en-us/ventilation/products/astral/"
                 target="_blank"
-                ><button class="button button-primary">Read More</button></a
+                ><btn class="btn btn-primary">Read More</btn></a
               >
             </div>
           </div>
@@ -381,7 +375,7 @@
               alt="Mederi-RF Medical Image"
             />
             <div class="card-body">
-              <h5 class="card-title">Mederi-RF</h5>
+              <h5 class="card-title">Simeox</h5>
               <p class="card-text">
                 Simeox technology offers healthcare professionals and their
                 patients suffering from chronic pulmonary pathologies.
@@ -390,7 +384,7 @@
 
             <div class="d-flex justify-content-around mb-5">
               <a href="https://www.physioassist.com/" target="_blank"
-                ><button class="button button-primary">Read More</button></a
+                ><btn class="btn btn-primary">Read More</btn></a
               >
             </div>
           </div>
@@ -414,7 +408,7 @@
               <a
                 href="https://www.smd-medical.com/product-detail/infusion-set/"
                 target="_blank"
-                ><button class="button button-primary">Read More</button></a
+                ><btn class="btn btn-primary">Read More</btn></a
               >
             </div>
           </div>
@@ -439,7 +433,7 @@
               <a
                 href="http://www.taewoongmedical.com/in/product/product_view.php?part1_idx=1&part2_idx=2&part_idx=11&idx=54"
                 target="_blank"
-                ><button class="button button-primary">Read More</button></a
+                ><btn class="btn btn-primary">Read More</btn></a
               >
             </div>
           </div>
@@ -461,7 +455,7 @@
 
             <div class="d-flex justify-content-around mb-5">
               <a href="https://www.sempermed.com/products/" target="_blank"
-                ><button class="button button-primary">Read More</button></a
+                ><btn class="btn btn-primary">Read More</btn></a
               >
             </div>
           </div>
@@ -492,18 +486,18 @@
               <a class="text-light mb-2" href="index.html"
                 ><i class="bi bi-arrow-right text-primary me-2"></i>Home</a
               >
-              <a class="text-light mb-2" href="Our%20Partners.html"
+              <a class="text-light mb-2" href="Our Partners.html"
                 ><i class="bi bi-arrow-right text-primary me-2"></i>Our
                 Partners</a
               >
-              <a class="text-light mb-2" href="Our%20Products.html"
+              <a class="text-light mb-2" href="Our Products.html"
                 ><i class="bi bi-arrow-right text-primary me-2"></i>Our
                 Products</a
               >
-              <a class="text-light mb-2" href="Our%20Story.html"
+              <a class="text-light mb-2" href="Our Story.html"
                 ><i class="bi bi-arrow-right text-primary me-2"></i>Our Story</a
               >
-              <a class="text-light" href="Our%20Team.html"
+              <a class="text-light" href="CEO.html"
                 ><i class="bi bi-arrow-right text-primary me-2"></i>Our Team</a
               >
             </div>
@@ -532,13 +526,13 @@
             <h3 class="text-white mb-4">Follow Us</h3>
             <div class="d-flex">
               <a
-                class="button button-lg button-primary button-lg-square rounded me-2"
+                class="btn btn-lg btn-primary btn-lg-square rounded me-2"
                 href="https://twitter.com/almadarmed?lang=en"
                 target="_blank"
                 ><i class="fab fa-twitter fw-normal"></i
               ></a>
               <a
-                class="button button-lg button-primary button-lg-square rounded me-2"
+                class="btn btn-lg btn-primary btn-lg-square rounded me-2"
                 href="https://www.linkedin.com/company/al-madar-medical-company/"
                 ><i class="fab fa-linkedin-in fw-normal"></i
               ></a>
@@ -551,9 +545,7 @@
     <!-- Footer End -->
 
     <!-- Back to Top -->
-    <a
-      href="#"
-      class="button button-lg button-primary button-lg-square rounded back-to-top"
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"
       ><i class="bi bi-arrow-up"></i
     ></a>
 
