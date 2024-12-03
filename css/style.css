@@ -640,3 +640,46 @@ h5 {
     font-size: 18px; /* Larger font size */
   }
 }
+
+.map-link {
+  color: var(--light);
+  text-decoration: none;
+  font-weight: bold;
+  transform: translateX(5px); /* Slightly shift the link to the right */
+  transition: color 0.3s ease, transform 0.3s ease, text-decoration 0.3s ease;
+}
+
+.map-link:hover {
+  color: var(--secondary);
+  transition: color 0.3s ease, transform 0.3s ease, text-decoration 0.3s ease;
+  transform: translateX(5px); /* Slightly shift the link to the right */
+}
+
+/* Base style for popular links */
+.popLinks {
+  transition: color 0.3s ease, transform 0.3s ease, text-decoration 0.3s ease;
+  text-decoration: none;
+}
+
+.popLinks:hover {
+  transition: color 0.3s ease, transform 0.3s ease, text-decoration 0.3s ease;
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+/* Hover effect for popular links */
+.popLinks:hover {
+  color: var(
+    --secondary
+  ); /* Change to primary color or any color of your choice */
+  text-decoration: none; /* Underline text on hover */
+  transform: translateX(5px); /* Slightly shift the link to the right */
+}
+
+.popLinks i {
+  transition: color 0.3s ease;
+}
+
+.popLinks:hover i {
+  color: var(--secondary); /* Change icon color on hover */
+}
